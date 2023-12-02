@@ -1,0 +1,31 @@
+﻿<Window x:Class="ass.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ass"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label VerticalAlignment="Bottom" HorizontalAlignment="Right">Name:</Label>
+        <Label VerticalAlignment="Top" Grid.Row="1" HorizontalAlignment="Right">Position</Label>
+        <TextBox Name="txt_name" Width="100"  Height="20" Grid.Column="1" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0,0,3" ></TextBox>
+        <TextBox Name="txt_state" Width="100" Height="20" Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,5,0,0" ></TextBox>
+        <Button Width="70" Height="20" Grid.Row="1" Grid.Column="1" VerticalAlignment="Bottom" HorizontalAlignment="Left" >insert</Button>
+        <Button Width="70" Height="20" Grid.Row="1" Grid.Column="1" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="99,0,0,0" >Update</Button>
+        <Button Width="70" Height="20" Grid.Row="1" Grid.Column="1" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,130,0" >Delete</Button>
+        <DataGrid Grid.Row="1" Grid.ColumnSpan="2" Margin="269,108,60,108" Grid.RowSpan="3" Name="DataG" ></DataGrid>
+
+    </Grid>
+</Window>
